@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+         version="3.1">
+    <servlet>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <servlet-class>servlet.HelloWorldServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>HelloWorldServlet</servlet-name>
+        <url-pattern>/HelloWorldServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>TestFormRequestServlet</servlet-name>
+        <servlet-class>servlet.TestFormRequestServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestFormRequestServlet</servlet-name>
+        <url-pattern>/TestFormRequestServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DisplayHeaderServlet</servlet-name>
+        <servlet-class>servlet.DisplayHeaderServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DisplayHeaderServlet</servlet-name>
+        <url-pattern>/DisplayHeaderServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <servlet-class>servlet.DatabaseAccessServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DatabaseAccessServlet</servlet-name>
+        <url-pattern>/DatabaseAccessServlet</url-pattern>
+    </servlet-mapping>
+    <servlet>
+        <servlet-name>UploadServlet</servlet-name>
+        <servlet-class>servlet.UploadServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>UploadServlet</servlet-name>
+        <url-pattern>/UploadServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
