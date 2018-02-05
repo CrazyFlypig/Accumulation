@@ -2,13 +2,13 @@
 
 [参考文章链接](http://sctrack.sendcloud.net/track/click/eyJtYWlsbGlzdF9pZCI6IDAsICJ0YXNrX2lkIjogIiIsICJlbWFpbF9pZCI6ICIxNTE3NDA4NDA3NjA0XzE4N18yODc5N183MzcwLnNjLTEwXzlfNF80OC1pbmJvdW5kMCQxNTIwMjQzNjkyMUAxNjMuY29tIiwgInNpZ24iOiAiZGJjY2M0ZGM0NDQ3ZTQwNDBhZmNlYzE5ZGNkNjAyNjciLCAidXNlcl9oZWFkZXJzIjoge30sICJsYWJlbCI6ICIxNjgzMyIsICJsaW5rIjogImh0dHAlM0EvL3dlZWtseS5tYW5vbmcuaW8vYm91bmNlJTNGdXJsJTNEaHR0cCUyNTNBJTI1MkYlMjUyRm1wLndlaXhpbi5xcS5jb20lMjUyRnMlMjUyRnFuNWZ3OHlIdmpCb3U2UHMyWG85THclMjZhaWQlM0QxMjIzMiUyNm5pZCUzRDIwMyUyNm4lM0RORFV3TkRVLi1GSG9pM20tMkpFczA4dTVwUGtZbktqRjE2NCIsICJ1c2VyX2lkIjogMTg3LCAiY2F0ZWdvcnlfaWQiOiA2MDU4OX0=.html)
 
-![640](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\640.jpg)
+![640](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/640.jpg)
 
 ## 一、TCP/IP模型
 
 基于TCP/IP的参考模型将协议分成四个层次，它们分别是链路层、网络层、传输层和应用层。下图表示TCP/IP模型与OSI模型各层的对照关系。
 
-![1.1](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\1.1.jpg)
+![1.1](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/1.1.jpg)
 
 TCP/IP协议族按照层次由上到下，层层包装。最上面应用层包括http、ftp等。第二层传输层包括TCP和UDP。第三层网络层，IP协议就在这，它负责对数据加上IP地址和其它数据以确定传输的目标。第四层是数据链路层，主要负责为待传送的数据加入一个以太网协议头，并进行CRC编码，为最后的数据传输做准备。
 
@@ -16,7 +16,7 @@ TCP/IP协议通信的过程其实就对应着数据入栈与出栈的过程。�
 
 以HTTP协议为例：
 
-![1.2](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\1.3.png)
+![1.2](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/1.3.png)
 
 ## 二、数据链路层
 
@@ -43,7 +43,7 @@ IP层使用IP地址唯一标识一个节点。
 
 #### 1.2 IP协议头
 
-![3.1](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\3.1.jpg)
+![3.1](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/3.1.jpg)
 
 这里只介绍:八位的TTL字段。这个字段规定该数据包在穿过多少个路由之后才会被抛弃。某个IP数据包每穿过一个路由器，该数据包的TTL数值就会减少1，当该数据包的TTL成为零，它就会被自动抛弃。
 这个字段的最大值也就是255，也就是说一个协议包也就在路由器里面穿行255次就会被抛弃了，根据系统的不同，这个数字也不一样，一般是32或者是64。
@@ -76,7 +76,7 @@ Tracerout的原理是，它收到目标主机IP后，首先给目的主机发送
 
 ## 六、TCP/UDP
 
-![6.1](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\6.1.jpg)
+![6.1](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/6.1.jpg)
 
 #### 面向报文
 
@@ -88,7 +88,7 @@ Tracerout的原理是，它收到目标主机IP后，首先给目的主机发送
 
 TCP和UDP协议的一些引用：
 
-![6.2](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\6.2.jpg)
+![6.2](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/6.2.jpg)
 
 #### 什么时候应该使用UDP？
 
@@ -108,7 +108,7 @@ DNS（Domain Name System，域名系统），因特网上作为域名和IP地址
 
 在TCP/IP协议中，TCP协议提供可靠的连接服务，连接是通过三次握手进行初始化的。三次握手的目的是同步连接双方的序列号和确认号并交换TCP窗口大小信息。
 
-![8.1](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\8.1.png)
+![8.1](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/8.1.png)
 
 第一次握手：建立连接。客户端发送连接请求报文段，将SYN位置为1，Sequence Number为 x；然后，客户端进入SYN_SEND状态，等待服务器确认；
 
@@ -124,7 +124,7 @@ DNS（Domain Name System，域名系统），因特网上作为域名和IP地址
 
 ### 2. 四次挥手
 
-![8.2](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\8.2.jpg)
+![8.2](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/8.2.jpg)
 
 第一次分手：主机1，设置Sequence Number，向主机2发送一个FIFN报文段；此时主机1进入FIN_WAIT_1状态；这表示主机1没有数据要发送给主机2了；
 
@@ -159,7 +159,7 @@ MSL：报文段最大生存时间，它是任何报文段被丢弃前在网络�
 
 设A向B发送数据。在建立连接时，B告诉A：“我的接收窗口是 rwnd=400”(这里的rwnd表示 receiver window)。因此，发送方的发送窗口不能超过接收方给出的接收窗口的数值。请注意，TCP的窗口单位是字节，不是报文段。假设每一个报文段为100字节长，而数据报文段的初始序号是1。大写的ACK表示首部中的确认ACK，小写的ack表示确认字段的值ack。
 
-![9.1](D:\projects\Accumulation\Internet\Theory\Images\IP，必知必会的十个问题\9.1.jpg)
+![9.1](https://github.com/CrazyFlypig/Accumulation/blob/master/Internet/Theory/Images/IP%EF%BC%8C%E5%BF%85%E7%9F%A5%E5%BF%85%E4%BC%9A%E7%9A%84%E5%8D%81%E4%B8%AA%E9%97%AE%E9%A2%98/9.1.jpg)
 
 从图中可以看出，B进行了三次流量控制。第一次把窗口减少到 rwnd=300	，第二次又减到 rwnd=100，最后减到 rwnd=0，即不允许发送方再发送数据了。这种使发送方暂停发送的状态持续到主机B重新发出一个新的窗口值为止。B向A发送的三个报文段都设置了 ACK=1，只有在 ACK=1时确认号字段才有意义。
 
