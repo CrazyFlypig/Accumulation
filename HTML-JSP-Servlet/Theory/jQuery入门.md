@@ -191,3 +191,17 @@ $('ul.lang li:nth-child(odd)'); // 选出序号为奇数的元素
 -   `:checked`：选择当前勾上的单选框和复选框，用这个选择器可以立刻获得用户选择的项目，如`$('input[type=radio]:checked')`；
 -   `:enabled`：可以选择可以正常输入的`<input>`、`<select>`等，也就是没有灰掉的输入；
 -   `:disabled`：和`:enabled`正好相反，选择那些不能输入的。
+
+## JQuery 应用积累
+
+### JQuery 对 Select 的操作
+
+#### 1. 选中某个 option
+
+```javascript
+//选择某个 option 的值。
+$('#select_id').val(option's value(type:'value'));
+//获取 select 的选中在值
+var value = $('#select_id').val();
+```
+
