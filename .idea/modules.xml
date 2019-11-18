@@ -4,6 +4,7 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HTML-JSP-Servlet/HTML-JSP-Servlet.iml" filepath="$PROJECT_DIR$/HTML-JSP-Servlet/HTML-JSP-Servlet.iml" />
       <module fileurl="file://$PROJECT_DIR$/Internet/Internet.iml" filepath="$PROJECT_DIR$/Internet/Internet.iml" />
+      <module fileurl="file://$PROJECT_DIR$/java-util/java-util.iml" filepath="$PROJECT_DIR$/java-util/java-util.iml" />
     </modules>
   </component>
 </project>
