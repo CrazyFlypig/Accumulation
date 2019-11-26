@@ -202,28 +202,27 @@ public class ReadExcelClass {
         Object key[] = picList.keySet().toArray();
         FileOutputStream fout = null;
         for (int i = 0 ; i < picList.size() ; i++){
-            PictureData pic = picList.get(key[i]);
-            String picName = key[i].toString();
-            String ext = pic.suggestFileExtension();
-            byte[] data = pic.getData();
-            fout = new FileOutputStream(tmpDir + picName);
-            fout.write(data);
-            fout.flush();
-            fout.close();
+                PictureData pic = picList.get(key[i]);
+                String picName = key[i].toString();
+                String ext = pic.suggestFileExtension();
+                byte[] data = pic.getData();
+                fout = new FileOutputStream(tmpDir + picName);
+                fout.write(data);
+                fout.flush();
+                fout.close();
+            }
         }
-    }
 
-    public static void main(String[] args) {
-        ReadExcelClass excelUtil = new ReadExcelClass("/Users/cc/Tmp/excel_file/faceOpenDoorLog.xls",0,0,10,1,0,"/Users/cc/Tmp/excel_file");
-        Map<String,List<String>> data = null;
-        try {
-            data = excelUtil.getDataFormExcel();
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-        if (data != null){
-            for (Map.Entry<String,List<String>> row : data.entrySet()){
-                System.out.println("行号：" + row.getKey());
+        public static void main(String[] args) {
+            ReadExcelClass excelUtil = new ReadExcelClass("/Users/cc/Tmp/excel_file/faceOpenDoorLog.xls",0,0,10,1,0,"/Users/cc/Tmp/excel_file");
+            Map<String,List<String>> data = null;
+            try {
+                data = excelUtil.getDataFormExcel();
+            }catch (Exception e){
+                e.printStackTrace();
+            }
+            if (data != null){
+                for (Map.Entry<String,List<String>> row : data.entrySet()){
                 for (String str : row.getValue()){
                     System.out.print(str + "    ");
                 }
